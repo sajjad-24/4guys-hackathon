@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: left;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin-left: auto;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+            display: inline;
+        }
+
+        .main-body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .circle1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome Back, User!</h1>
+    </div>
+
+    <div class="navbar">
+        <h1>Navigation</h1>
+        <img src="profileicon.jpg" alt="Profile photo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Homework</a></li>
+            <li><a href="#">Assignment</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-body">
+   
+            <h2>Today is Saturday 4th November</h2>
+            <!--<p>This is the main content area of your webpage.</p>-->
+     
+        <div class="circle1">
+            0 Homeworks Due
+        </div>
+        <div class="circle1">
+            0 Assignments Due
+        </div>
+    </div>
+</body>
+
+</html>

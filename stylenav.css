@@ -1,0 +1,177 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #639c34;
+  
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */ 
+}
+.nv{
+  background-color: #303C6C!important ;
+}
+.custom-box {
+  border: 2px solid red;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #f1f1f1; /* Optional: Add a background color */
+}
+
+.sidebar{
+    height: 100vh;
+    min-height: 1000px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #303C6C;
+    overflow: hidden;
+    transition: width 0.2s;
+}
+.sidebar:hover{
+    width: 200px;
+    overflow: visible;
+}
+img.logo{
+    width: 50px;
+    padding: 0 4px;
+    margin: 30px 0;
+}
+nav #sliderr{
+    height: 60vh;
+    min-height: 300px;
+}
+ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+li a{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px 0;
+    font-family: 'Poppins',sans-serif;
+    color: #cacaca;
+}
+li a:hover{
+    background-image: linear-gradient(
+        to right,
+        #2a88e6 7px,
+        rgba(255,255,255,0.1) 7px
+    );
+    color: #ffffff;
+}
+i.fas{
+    font-size: 20px;
+    text-align: right;
+}
+li p{
+    width: 75px;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.3px;
+}
+#todo-form {
+    padding: 32px 32px 0;
+  }
+  
+  #todo-form input {
+    padding: 12px;
+    margin-right: 12px;
+    width: 225px;
+  
+    border-radius: 4px;
+    border: none;
+  
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: white;
+  
+    font-size: 14px;
+    outline: none;
+  }
+  
+  #todo-form button {
+    padding: 12px 32px;
+  
+    border-radius: 4px;
+    border: none;
+  
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    color: black;
+  
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* ---- BOARD ---- */
+  .lanes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 16px;
+  
+    padding: 24px 32px;
+  
+    overflow: scroll;
+    height: 100%;
+  }
+  
+  .heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .swim-lane {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  
+    background: #929094;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  
+    padding: 12px;
+    border-radius: 4px;
+    width: 225px;
+    min-height: 120px;
+  
+    flex-shrink: 0;
+  }
+  
+  .task {
+    background: rgb(221, 222, 233);
+    color: black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  
+    padding: 12px;
+    border-radius: 4px;
+  
+    font-size: 16px;
+    cursor: move;
+  }
+  
+  .is-dragging {
+    scale: 1.05;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: rgb(50, 50, 50);
+    color: white;
+  }
+
+  #ball1
+  {
+    background-color: rgb(210, 44, 44);
+    width: 200px;
+    position: relative;
+    top: 10px;
+    height: 200px;
+    border-radius: 50%;
+  }

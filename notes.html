@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Notes</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="stylenav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .add-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="#">
+                <img src="profileicon.jpg" alt="logo" class="logo">
+            </a>
+        </div>
+        <nav id="sliderr">
+                <li>
+                    <a href="homepage.php">
+                        <i class="fas fa-home"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-calendar-alt"></i>
+                        <p>Focus Mode</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.php">
+                        <i class="far fa-calendar-alt"></i>
+                        <p>Calender</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="navbar.php">
+                        <i class="fas fa-book"></i>
+                        <p>Homework</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="assignment.html">
+                        <i class="fas fa-clipboard-check"></i>
+                        <p>Assignment</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="notes.html">
+                        <i class="far fa-sticky-note"></i>
+                        <p>Notes</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <i class="fas fa-cogs"></i>
+                        <p>Settings</p>
+                    </a>
+                </li>
+        </nav>
+    </div>
+    <nav style="z-index: -1;" class="navbar navbar-light bg-light justify-content-between">
+        <a style="width: 100px;" class="navbar-brand"></a>
+        <h1>Notes</h1>
+        <form class="form-inline">
+            <div>
+                <div>Saturday 5th November   &nbsp;   </div>
+              </div>
+          <center><button class="btn btn-dark my-2 my-sm-0" type="submit">Logout</button></center>
+          
+        </form>
+      </nav>
+      <div class="container" style="position:relative;left:100px;z-index:-1">
+      
+        <table>
+            <tr>
+                <th>S. NO</th>
+                <th>Topic</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Jquery</td>
+                <td>Internet Programming</td>
+            </tr>
+       
+            <tr>
+                <td>2</td>
+                <td>Figma</td>
+                <td>Human Computer Interaction</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Turing Machine</td>
+                <td>Theory Of Computation</td>
+            </tr>
+       
+        </table>
+
+        <button class="add-button">Add Notes</button>
+    </div>
+</body>
+</html>
